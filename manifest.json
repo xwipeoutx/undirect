@@ -1,6 +1,6 @@
 {
   "name" : "Undirect",
-  "version" : "1.0",
+  "version" : "1.0.1",
   "description" : "Removes redirection tracking of clicks on search results in google",
   "icons": {
     "16": "undirect48.png",
