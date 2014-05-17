@@ -3,8 +3,8 @@
     "manifest_version": 2,
     "name": "Undirect",
     "version": "1.1.1",
-
-    // Recommended
+    "author": "Steve Leigh",
+    "homepage_url": "https://github.com/xwipeoutx/undirect",
     "description": "A plain text description",
     "icons": {
         "16": "undirect16.png",
