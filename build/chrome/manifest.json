@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
     "name": "Undirect",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "author": "Steve Leigh",
     "homepage_url": "https://github.com/xwipeoutx/undirect",
-    "description": "A plain text description",
+    "description": "Removes this tracking and redirection from google search results",
     "icons": {
         "16": "undirect16.png",
         "48": "undirect48.png",
