@@ -13,18 +13,21 @@ gulp.task('userscript', function() {
         .pipe(gulp.dest('package/userscript'));
 });
 
-gulp.task('chrome', function() {
-    gulp.src('src/undirect.chromeextension.js')
+gulp.task('chrome', ['chrome-script', 'chrome-static'], function() {
+});
+
+gulp.task('chrome-script', function() {
+    return gulp.src('src/undirect.chromeextension.js')
         .pipe(replace('//REPLACE_ME', undirectScript))
         .pipe(rename('undirect.js'))
         .pipe(gulp.dest('package/chrome'));
+});
 
-    gulp.src('assets/undirect*.png')
-        .pipe(gulp.dest('package/chrome'));
-
-    gulp.src('build/chrome/*')
+gulp.task('chrome-static', function() {
+    return gulp.src('assets/undirect*.png')
         .pipe(gulp.dest('package/chrome'));
 });
+
 
 function undirectScript() {
     return fs.readFileSync('src/undirect.js');
