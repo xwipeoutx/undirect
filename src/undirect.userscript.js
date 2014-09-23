@@ -3,7 +3,7 @@
 // @namespace  http://stevesspace.com/
 // @version    1.1.2
 // @description  Removes this tracking and redirection from google search results
-// @include      *
+// @include      /https?.\/\/.+google[^\/]*/
 // @copyright  2014+, Steve Leigh
 // ==/UserScript==
 
