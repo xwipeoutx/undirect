@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name       Undirect
 // @namespace  http://stevesspace.com/
-// @version    1.1.2
+// @version    1.1.3
 // @description  Removes this tracking and redirection from google search results
-// @include      /https?.\/\/.+google[^\/]*/
+// @include      /^https?.\/\/.+google[^\/]*/
 // @copyright  2014+, Steve Leigh
 // ==/UserScript==
 
