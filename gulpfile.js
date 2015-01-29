@@ -14,7 +14,7 @@ gulp.task('userscript', function() {
 });
 
 gulp.task('chrome', function() {
-    return gulp.src(['assets/undirect*.png', 'src/undirect.js'])
+    return gulp.src(['assets/*.png', 'assets/manifest.json', 'src/undirect.js'])
         .pipe(gulp.dest('package/chrome'));
 
 });

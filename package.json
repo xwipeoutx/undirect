@@ -1,7 +1,7 @@
 {
   "name": "undirect",
   "description": "Removes this tracking and redirection from google search results",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "homepage": "https://github.com/xwipeoutx/undirect",
   "license": "BSD 2-Clause",
   "repository": "xwipeoutx/undirect",
