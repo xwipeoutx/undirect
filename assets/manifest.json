@@ -12,6 +12,8 @@
     },
     "content_scripts": [{
         "matches": [
+            "*://*.yandex.com/*",
+            "*://*.yandex.ru/*",
             "*://*.google.com/*",
             "*://*.google.ad/*",
             "*://*.google.ae/*",
