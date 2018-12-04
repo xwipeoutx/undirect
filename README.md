@@ -1,6 +1,8 @@
 undirect
 ========
 
+**UPDATE**: Google support has been removed, as their tracking no longer occurs via a redirection.  See [this issue](https://github.com/xwipeoutx/undirect/issues/13) for more information.
+
 When searching using google, the result links don't go directly to the site - they first send the user to an interim "redirecting" page, which they use to keep track of user's search results
 
 Usually, this isn't a problem, but sometimes when you're on a slow connection, or want to send friends a link straight from the search results, this just gets in the way.

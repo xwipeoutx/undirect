@@ -1,35 +1,11 @@
 (function () {
-    var googlePagesPattern = /https?.\/\/.+google[^\/]*/gi;
     var facebookPagesPattern = /https?.\/\/.+facebook[^\/]*/gi;
 
-    var isGoogle = document.location.href.match(googlePagesPattern);
     var isFacebook = document.location.href.match(facebookPagesPattern);
 
-    if (!isGoogle && !isFacebook) {
+    if (!isFacebook) {
         return;
     }
-
-    var googleScript = (function () {
-        var expectedRwt = function () { return true; };
-
-        var replaceRwtFunction = function () {
-            if (window.rwt && window.rwt != expectedRwt) {
-                delete window.rwt;
-                Object.defineProperty(window, 'rwt', {
-                    value: expectedRwt,
-                    writable: false
-                });
-            }
-        };
-
-        replaceRwtFunction();
-
-        var timeoutId = 0;
-        document.body.addEventListener("DOMNodeInserted", function () {
-            if (timeoutId) clearTimeout(timeoutId)
-            timeoutId = setTimeout(replaceRwtFunction, 1000);
-        }, false);
-    });
 
     var facebookScript = (function () {
         var timeoutId = 0;
@@ -62,9 +38,7 @@
         }
     });
 
-    var script = isGoogle
-        ? googleScript
-        : facebookScript;
+    var script = facebookScript;
 
     // Write script to page - since plugins often work in an isolated world, this gives us the
     // ability to replace javascript added by the page
